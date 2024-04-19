@@ -2,6 +2,6 @@
 {
     public interface IDateTimeService
     {
-        DateTime NowUtc {  get; }
+        DateTime NowUtc { get; }
     }
 }
