@@ -14,10 +14,10 @@ namespace Domain.Entities
         public int Edad
         {
             get {
-                if (_edad <= 0) {
-                    _edad = new DateTime(DateTime.Now.Subtract(this.FechaNacimiento).Ticks).Year - 1;
+                if (this._edad <= 0) {
+                    this._edad = new DateTime(DateTime.Now.Subtract(this.FechaNacimiento).Ticks).Year - 1;
                 }
-                return _edad;
+                return this._edad;
             }
         }
     }
